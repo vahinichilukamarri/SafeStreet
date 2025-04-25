@@ -9,7 +9,7 @@ export default function EnterOTP() {
 
   const verifyOTP = async () => {
     try {
-      const res = await fetch('https://87c4-183-83-163-184.ngrok-free.app/api/auth/verify-otp', {
+      const res = await fetch('https://00f5-2409-40f0-125-c676-8857-c408-1556-c6b4.ngrok-free.app/api/auth/verify-otp', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, otp }),

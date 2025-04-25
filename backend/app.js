@@ -4,7 +4,7 @@ const cors = require('cors');
 const authRoutes = require('./routes/authRoutes');
 
 const app = express();
-
+require('dotenv').config();
 // Middleware
 app.use(express.json());
 app.use(cors({
@@ -14,7 +14,7 @@ app.use(cors({
 }));
 
 // MongoDB URI
-const MONGO_URI = 'mongodb+srv://vahinich1236:Venkata%4002@mycluster.awk8l.mongodb.net/safestreet?retryWrites=true&w=majority&appName=Mycluster';
+const MONGO_URI = process.env.MONGO_URI;
 
 mongoose.connect(MONGO_URI)
   .then(() => console.log('✅ MongoDB connected'))

@@ -43,7 +43,7 @@ export default function RegisterScreen() {
 
     try {
       const response = await fetch(
-        'https://87c4-183-83-163-184.ngrok-free.app/api/auth/signup', // Replace with your server URL
+        'https://00f5-2409-40f0-125-c676-8857-c408-1556-c6b4.ngrok-free.app/api/auth/signup', // Replace with your server URL
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
